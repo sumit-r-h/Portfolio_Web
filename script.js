@@ -20,3 +20,11 @@ ScrollReveal().reveal('.fade-in-up', {
 document.querySelectorAll('section > *').forEach(element => {
     element.classList.add('fade-in-up');
 });
+
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
